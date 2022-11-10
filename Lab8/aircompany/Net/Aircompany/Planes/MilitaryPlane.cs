@@ -15,9 +15,7 @@ namespace Aircompany.Planes
         public override bool Equals(object obj)
         {
             var plane = obj as MilitaryPlane;
-            return plane != null &&
-                   base.Equals(obj) &&
-                   _type == plane._type;
+            return plane != null && base.Equals(obj) && _type == plane._type;
         }
 
         public override int GetHashCode()

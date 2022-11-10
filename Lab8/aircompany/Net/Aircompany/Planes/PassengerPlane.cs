@@ -15,9 +15,7 @@ namespace Aircompany.Planes
         public override bool Equals(object obj)
         {
             var plane = obj as PassengerPlane;
-            return plane != null &&
-                   base.Equals(obj) &&
-                   _passengersCapacity == plane._passengersCapacity;
+            return plane != null && base.Equals(obj) && _passengersCapacity == plane._passengersCapacity;
         }
 
         public override int GetHashCode()

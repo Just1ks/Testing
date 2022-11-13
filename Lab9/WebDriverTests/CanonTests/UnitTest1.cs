@@ -14,7 +14,7 @@ namespace FunctionalTests
 
             driver.Url = "https://www.21vek.by/";
 
-            driver.FindElement(By.Id("catalogSearch")).SendKeys("��������");
+            driver.FindElement(By.Id("catalogSearch")).SendKeys("Ïðèíòåðû"); //Принтеры            
             driver.FindElement(By.Id("catalogSearch")).SendKeys(Keys.Enter);
 
             driver.FindElement(By.XPath("//*[@id='j-filter__form']/div[2]/dl/div/dd[4]/label")).Click();
